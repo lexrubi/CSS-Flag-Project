@@ -42,10 +42,11 @@
       position: relative;
      }
 
-     .flag > p {
+    p { /* The two p tag had the same value. I had to create the second one */
       font-size: 5rem;
       color: white;
       text-align: center;
+      margin: 0; /* The text had a default margin causing the extra space on top and bottom */
      }
 
     .flag div {
@@ -53,10 +54,10 @@
       height: 300px;
       width: 900px;
       position: absolute;
-      top: 100px;
+      top: 150px; /* The value had to increase to make top red section higher */
     }
 
-    .flag div > p {
+    .flag div > div {
       border-radius: 50%;
       background-color: white;
       height: 200px;
@@ -64,7 +65,13 @@
       font-size: 5rem;
       text-align: center;
       margin-left: 350px;
-      margin-bottom: 200px;
+      /* margin-bottom: 200px; */
+      position: absolute;
+      top: 50px;
+    }
+
+    .flag div > div p {
+      color: black;
     }
 
     /* margin-left: 350px; */
